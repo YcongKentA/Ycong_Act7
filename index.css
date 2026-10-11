@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* tibuok image style ni */
+img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+
+/* PARA NI SA BACKGROUND IMAGE SA INDEX */
+.index-bg {
+    background-image: url('BackG/RGD.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PARA NI SA BACKGROUND IMAGE SA ABOUT */
+.about-bg {
+    background-image: url('BackG/aboutmee.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PARA NI SA BACKGROUND IMAGE SA SHS */
+.shs-bg {
+    background-image: url('BackG/maroongrad.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* PARA NI SA TULO PARA MA ALIGN SA TUNGA */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* FIX LIST ALIGNMENT sa mga text dawg haahha */
+ul, ol {
+    text-align: left;
+    display: inline-block;
+    margin: 10px 0;
+    padding-left: 20px;
+}
+
+/* PARA NI SA INDEX COLOR */
+body.index-page {
+    background-color: #000000;
+    color: #ffffff;  
+}
+
+/* PARA SA ABOUT PAGE COLOR */
+body.about-page {
+    background-color: #000000;
+    color: #ffffff;  
+}
+
+/* PARA SA SHS PAGE COLOR */
+body.shs-page {
+    background-color: #800000;
+    color: #ffffff;  
+}
+
+/* PARA SA TEXT SA UBOS INDEX, SHS DAYS UG ABOUT */
+.text-cyan a {
+    color: rgb(0, 255, 255); /* Cyan */
+}
+
+/* Para ni sa content borders sa SHS, INDEX ug ABOUT */
+.content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 25px 30px;
+    margin: 15px 0;
+    width: 90%;
+    max-width: 700px;
+    border-width: 2px;
+    border-style: solid;
+}
+
+/* INDEX color border */
+body.index-page .content-box {
+    border-color: red;
+}
+
+/* SHS border color */
+body.shs-page .content-box {
+    border-color: maroon;
+}
+
+/* About border color */
+body.about-page .content-box {
+    border-color: grey; /* You can change this to 'silver' if you prefer */
+}
